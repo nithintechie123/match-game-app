@@ -333,7 +333,7 @@ class MatchGame extends Component {
           <ul className="score-timer-container">
             <li>
               <p className="score-text">
-                Score:<span className="span-element">{score}</span>
+                Score:<p className="span-element">{score}</p>
               </p>
             </li>
             <li className="timer-container">
@@ -342,7 +342,7 @@ class MatchGame extends Component {
                 alt="timer"
                 className="timer-icon"
               />
-              <span className="span-element">{timer} sec</span>
+              <p className="span-element">{timer} sec</p>
             </li>
           </ul>
         </nav>
@@ -353,10 +353,10 @@ class MatchGame extends Component {
               alt="trophy"
               className="trophy-image"
             />
-            <h1 className="final-score">
+            <p className="final-score">
               Your Score
               <br /> {score}
-            </h1>
+            </p>
             <button
               type="button"
               className="play-again-button"
@@ -371,11 +371,15 @@ class MatchGame extends Component {
           </div>
         ) : (
           <>
+            <h1 className="game-rules-heading">
+              Match The Below thumbnails With The Image Displayed Above
+            </h1>
             <img
               src={randomImageUrl.imageUrl}
               alt="match"
               className="matching-image"
             />
+
             <ul className="tabs-list-container">
               {tabsList.map(eachTab => (
                 <TabItem

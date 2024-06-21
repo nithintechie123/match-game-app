@@ -31,6 +31,9 @@
   color: #ffffff;
   font-family: 'Roboto';
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 0px;
 }
 
 .span-element {
@@ -46,6 +49,14 @@
 
 .timer-icon {
   width: 20px;
+}
+
+.game-rules-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: medium;
+  text-align: center;
 }
 
 .matching-image {
